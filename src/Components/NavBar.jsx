@@ -41,7 +41,7 @@ const NavBar = () => {
         <div className='col-start-10 border-l-2 border-r-2 px-5 flex items-center justify-center text-xl space-x-5'>
          <RiSearch2Line/>
         </div>
-       <div className=' col-start-12 flex flex-col justify-center text-lg mr-5'>
+       <div className=' col-start-12 flex flex-col justify-center text-sm mr-5'>
         <h3>Need Help?</h3>
         <h3 className='w-max'>+92 3036542828</h3>
        </div>
