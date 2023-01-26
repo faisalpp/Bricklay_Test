@@ -1,5 +1,5 @@
 import React from 'react'
-import { RiArrowDownSLine } from 'react-icons/ri'
+import {RiArrowDownSLine} from 'react-icons/ri';
 
 const HeroSection = () => {
   const scrollDown = () =>{
