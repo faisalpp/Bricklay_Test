@@ -10,7 +10,7 @@ const NavBar = () => {
     <div className="lg:grid hidden grid-cols-14 bg-t1 text-white w-full border-b-2 border-white">
         {/* Logo */}
       <div className='col-start-1 col-end-2 flex border-r-2 h-20 items-center px-5 text-lg'>
-       <img src="/public/logo1.png" className='w-14'/>
+       <img src="https://www.dropbox.com/s/rn2u3ile3pbczzj/logo1.png?raw=1" className='w-14'/>
       </div>  
       {/* Navbar Links */}
         <div className='col-start-3 flex space-x-16 px-2 items-center text-md'>
