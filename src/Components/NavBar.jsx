@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { AiOutlineInstagram,AiFillFacebook,AiFillLinkedin,AiOutlineTwitter } from 'react-icons/ai'
+import {AiOutlineInstagram,AiFillFacebook,AiFillLinkedin,AiOutlineTwitter} from 'react-icons/ai'
 import {RiArrowDropDownLine, RiArrowDropUpLine, RiCloseLine, RiMenuFill, RiSearch2Line} from 'react-icons/ri'
 const NavBar = () => {
  const [menu,setMenu] = useState(false);
