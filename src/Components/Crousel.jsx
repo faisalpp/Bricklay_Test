@@ -6,7 +6,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 
 const Crousel = () => {
   return (
-    <div className='flex flex-col space-y-14 py-10 items-center bg-t3 text-white lg:h-[600px] h-fit'>
+    <div id="p1" className='flex flex-col space-y-14 py-10 items-center bg-t3 text-white lg:h-[600px] h-fit'>
      <div className='flex flex-col items-center'>
       <h3 className='lg:text-5xl text-xl font-bold'>REAL-WORLD EXPERIENCE</h3> 
       <h3 className='text-[10px] lg:text-lg'>The best business consulting firm you can count on!</h3> 
@@ -34,7 +34,7 @@ const Crousel = () => {
      </CarouselProvider>
      </div>
      
-     <div className='lg:hidden flex px-10 w-full justify-centers'>
+     <div id="p1" className='lg:hidden flex px-10 w-full justify-centers'>
      <CarouselProvider naturalSlideWidth={300} naturalSlideHeight={230} totalSlides={8} visibleSlides={1} className="w-full" >
      <Slider>
       <Slide index={0}><CrouselCard/></Slide>

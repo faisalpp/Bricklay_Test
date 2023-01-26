@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { AiOutlineInstagram,AiFillFacebook,AiFillLinkedin,AiOutlineTwitter } from 'react-icons/ai'
-import {RiArrowDropDownLine, RiArrowDropUpLine, RiMenuFill, RiSearch2Line} from 'react-icons/ri'
+import {RiArrowDropDownLine, RiArrowDropUpLine, RiCloseLine, RiMenuFill, RiSearch2Line} from 'react-icons/ri'
 const NavBar = () => {
  const [menu,setMenu] = useState(false);
+ const [mobMenu,setMobMenu] = useState(false);
 
   return (
     <>
@@ -48,10 +49,24 @@ const NavBar = () => {
 
       <div className='lg:hidden grid grid-cols-12 bg-t1 py-2 border-b-2'>
        <div className="col-start-1 col-end-3 ml-2">
-        <img src="/public/logo1.png" className='w-12 h-10'/>
+        <img src="https://www.dropbox.com/s/rn2u3ile3pbczzj/logo1.png?raw=1" className='w-12 h-10'/>
        </div>
        <div className=" col-start-11 flex items-center w-full">
-        <RiMenuFill className='text-white text-xl'/>
+      
+       <div className='relative'>
+        {mobMenu ? <RiCloseLine onClick={()=>setMobMenu(false)} className='text-white text-xl'/>:<RiMenuFill onClick={()=>setMobMenu(true)} className='text-white text-xl'/>}
+        <div style={{'height':"calc(100vh - 80px)"}} className={` ${mobMenu?'absolute':'hidden'} bg-white -right-10 top-10 w-52`}>
+        <div className='flex flex-col text-2xl font-bold justify-center items-center space-y-10 py-10 text-t2'>
+         <a>Home</a>
+         <a>Pages</a>
+         <a>Services</a>
+         <a>Case Shop</a>
+         <a>Blog</a>
+         <a>Content</a>
+        </div> 
+        </div>
+       </div> 
+       
        </div>
       </div>
     </>

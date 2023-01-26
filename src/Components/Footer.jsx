@@ -19,7 +19,7 @@ const Footer = () => {
      <div className='lg:grid lg:grid-cols-12 flex flex-col space-y-10 w-full py-10'>
        {/* first */}
        <div className='lg:col-start-1 lg:col-end-4 flex flex-col space-y-5 items-center'>
-         <img src="/public/logo1.png" className='w-32 h-16'/>
+         <img src="https://www.dropbox.com/s/rn2u3ile3pbczzj/logo1.png?raw=1" className='w-32 h-16'/>
         <p className='text-t8 text-[16px]'>Welcome to our consultancy agency. Lorem ipsum simply text amet cing elit simply text amet cing alit.</p>
         <div className='flex flex-col space-y-5 text-[16px] text-t8 mt-5'>
           <h3 className='flex items-center'><FaPhoneSquare className='text-t2 lg:text-2xl text-xl mr-1'/> +92 303 6542828</h3>  
