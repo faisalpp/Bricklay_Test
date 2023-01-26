@@ -13,8 +13,8 @@ const NavBar = () => {
        <img src="https://www.dropbox.com/s/rn2u3ile3pbczzj/logo1.png?raw=1" className='w-14'/>
       </div>  
       {/* Navbar Links */}
-        <div className='col-start-3 flex space-x-16 px-2 items-center text-md'>
-         <h3>HOME</h3>
+        <div className='col-start-3 flex space-x-16 px-2 items-center text-sm'>
+         <a className='cursor-pointer'>HOME</a>
          <div className='relative'>
          {menu ? <h3 className='flex items-center cursor-pointer'>SERVICES <RiArrowDropUpLine onClick={()=>setMenu(false)} className='text-2xl'/></h3> :<h3 className='flex items-center cursor-pointer'>SERVICES <RiArrowDropDownLine onClick={()=>setMenu(true)} className='text-2xl'/></h3>}
          <div className={`${menu?'absolute':'hidden'} bg-white text-t2 top-8 rounded-b-md`}>
@@ -27,10 +27,10 @@ const NavBar = () => {
          </div>
          </div>
          
-         <h3>PAGES</h3>
-         <h3 className='w-max'>CASE SHOP</h3>
-         <h3>BLOG</h3>
-         <h3>CONTENT</h3>
+         <a className='cursor-pointer'>PAGES</a>
+         <a className='w-max cursor-pointer'>CASE SHOP</a>
+         <a className='cursor-pointer'>BLOG</a>
+         <a className='cursor-pointer'>CONTENT</a>
         </div> 
         <div className='col-start-8 flex items-center text-xl space-x-5'>
          <AiOutlineInstagram className='w-[38px]'/>
